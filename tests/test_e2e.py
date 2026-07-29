@@ -37,8 +37,9 @@ def test_place_order(setup, data):
     shop_page = home_page.click_shop_button()
 
     logger.info(f"Adding {data["Product"]} to the cart")
-
     shop_page.add_product_to_cart(data["Product"])
+
+    logger.info(f"Clicking checkout button")
     checkout_page = shop_page.click_checkout_btn()
 
     confirm_page = checkout_page.click_checkout_btn()
