@@ -8,7 +8,7 @@ driver = None
 
 def pytest_addoption(parser):
     parser.addoption("--browser", action="store", default="chrome", help="Browser to run tests")
-    parser.addoption("--env", action="store", default="dev",  help="Environment (qa, staging, prod)")
+    parser.addoption("--env", action="store", default="prod",  help="Environment (qa, staging, prod)")
 
 @pytest.fixture
 def setup(request):
