@@ -14,8 +14,8 @@ def pytest_addoption(parser):
 def setup(request):
     global driver
     URLS = {
-        "qa": "https://qa.example.com",
-        "staging": "https://staging.example.com",
+        "qa": "https://rahulshettyacademy.com/angularpractice/shop",
+        "staging": "https://rahulshettyacademy.com/angularpractice/shop",
         "prod": "https://rahulshettyacademy.com/angularpractice/shop"
     }
 
